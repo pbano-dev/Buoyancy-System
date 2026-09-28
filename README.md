@@ -7,7 +7,7 @@ The project is currently under active development and focuses on gameplay-orient
 ## Demo
 
 <p align="center">
-  <img src="./root/Resources/demo.gif" alt="Buoyancy system demo">
+  <img src="./Resources/demo.gif" alt="Buoyancy system demo">
 </p>
 
 ## How it works
