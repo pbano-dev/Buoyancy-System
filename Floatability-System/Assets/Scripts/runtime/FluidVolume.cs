@@ -19,6 +19,9 @@ public class FluidVolume : MonoBehaviour
     public float Density => density;
     public float SurfaceY => fluidTrigger.center.y + fluidTrigger.size.y * 0.5f;
     
+    public Vector3 LocalMin => fluidTrigger.center - fluidTrigger.size * 0.5f;
+    public Vector3 LocalMax => fluidTrigger.center + fluidTrigger.size * 0.5f;
+    
     /// <summary>
     /// depth > 0 -> submerged
     /// depth = 0 -> surface

@@ -1,21 +1,20 @@
 using UnityEngine;
-using Unity.Collections;
 using System.Collections.Generic;
 
 internal class BodySimulationData
 {
     internal readonly HashSet<FluidVolume> Volumes = new();
 
-    internal Vector3[] WorldVertices;
-    internal float[] Depths;
-    internal readonly Vector3[] ClippedTriangle = new Vector3[4];
+    internal readonly Vector3[] WorldVertices;
+
+    internal readonly Vector3[] ClipBufferA = new Vector3[12];
+    internal readonly Vector3[] ClipBufferB = new Vector3[12];
 
     internal BodySimulationData(int vertexCount)
     {
         WorldVertices = new Vector3[vertexCount];
-        Depths = new float[vertexCount];
     }
-    
+
     // DEBUG -> GIZMOS
     internal struct TriangleDebugData
     {
@@ -34,5 +33,4 @@ internal class BodySimulationData
 
     internal readonly List<TriangleDebugData> DebugTriangles = new();
     // DEBUG -> GIZMOS
-    
 }
