@@ -1,4 +1,4 @@
-# Floatability System
+# Buoyancy System
 
 A lightweight buoyancy and fluid interaction system for Unity, designed to provide physically believable behaviour without the cost or complexity of a full fluid simulation.
 
